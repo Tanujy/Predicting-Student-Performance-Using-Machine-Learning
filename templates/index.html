@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Predict Student Performance</h2>
+
+    <form action="/predict" method="post">
+
+        <label>Attendance (%):</label>
+        <input type="number" name="attendance" required>
+
+        <label>Study Hours (per day):</label>
+        <input type="number" name="study_hours" required>
+
+        <label>Previous GPA:</label>
+        <input type="number" step="0.01" name="gpa" required>
+
+        <label>Internal Test Score:</label>
+        <input type="number" name="test_score" required>
+
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+
+</html>
